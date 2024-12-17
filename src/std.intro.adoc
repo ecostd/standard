@@ -1,0 +1,7 @@
+[[intro,([intro])]]
+= Introduction [.right]#<<intro,[intro]>>#
+
+Any trade name used in this document is information given for the convenience of
+users and does not constitute an endorsement.
+
+include::std.intro.changes.adoc[leveloffset=+1]

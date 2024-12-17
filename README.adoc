@@ -11,13 +11,15 @@ available shortly.
 
 == Getting Started
 
-=== Asciidoctor
+== Building
+
+Asciidoctor::
 
 You'll need the latest https://asciidoctor.org/[Asciidoctor] version 2. Consult
 their https://asciidoctor.org/#installation[installation] instructions for ways
 to obtain it.
 
-=== B2
+B2::
 
 The https://www.bfgroup.xyz/b2/[B2] build system is needed to manage the
 translation steps from the Asciidoctor sources, to LaTex+PDF and to HTML.

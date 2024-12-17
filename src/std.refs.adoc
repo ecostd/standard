@@ -1,0 +1,26 @@
+[[refs,([refs])]]
+= References [.right]#<<refs,[refs]>>#
+
+[[refs.norm,([refs.norm])]]
+== Normative References [.right]#<<refs.norm,[refs.norm]>>#
+
+(((normative references,references,normative)))
+The following documents are referred to in the text in such a way that some or
+all of their content constitutes requirements of this document. For dated
+references, only the edition cited applies. For undated references, the latest
+edition of the referenced document (including any amendments) applies.
+
+[[JSON,The JSON data interchange syntax]]JSON::
+	ISO/IEC 21778:2017, _Information technology --- The JSON data interchange syntax_
+[[RFC2119]]RFC2119::
+	Bradner, S., "Key words for use in RFCs to Indicate Requirement Levels",
+	BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997,
+	<https://www.rfc-editor.org/info/rfc2119>.
+[[SemVer]]SemVer::
+	The SemVer Team. _Semantic Versioning 2.0.0_. June 18 2013.
+	<https://semver.org/spec/v2.0.0.html>
+[[Vocabulary]]Vocabulary::
+	ISO/IEC 2382, _Information technology --- Vocabulary_
+
+[[refs.info,([refs.info])]]
+== Informative References [.right]#<<refs.info,[refs.info]>>#

@@ -1,0 +1,57 @@
+= Programming Languages Tools Standard
+:author: ???
+:email: ecosystemstandards@gmail.com
+:license: Creative Commons Attribution 4.0 International License (CC BY 4.0)
+:authors: René Ferdinand Rivera Morell
+:copyright: Copyright {docyear} {authors}
+:doctitleen: Programming Languages Tools Standard
+:doctype: book
+:revdate: {docdate}
+ifeval::["{docstage}" == "draft"]
+:doctitle: Draft, {doctitleen}
+:pubdate: Pending
+endif::[]
+ifeval::["{docstage}" == "final"]
+:doctitle: {doctitleen}
+:pubdate: {revdate}
+endif::[]
+:version-label!:
+:reproducible:
+:nofooter:
+:toc: macro
+:toc-title: Contents
+:toclevels: 5
+:caution-caption: Caution:
+:important-caption: Important:
+:note-caption: Note:
+:tip-caption: Tip:
+:warning-caption: Warning:
+:source-highlighter: rouge
+:noheader:
+:docinfo: private
+
+//-------------------------------------------------------------------
+// Front matter..
+:sectnums!:
+
+include::std.cover.adoc[leveloffset=+1]
+
+toc::[]
+
+include::std.license.adoc[leveloffset=+1]
+
+//-------------------------------------------------------------------
+// Chapters..
+:sectnums:
+
+include::std.intro.adoc[leveloffset=+1]
+include::std.conventions.adoc[leveloffset=+1]
+include::std.refs.adoc[leveloffset=+1]
+
+//-------------------------------------------------------------------
+// Appendices..
+:sectnums!:
+
+//-------------------------------------------------------------------
+// Back matter..
+:sectnums!:

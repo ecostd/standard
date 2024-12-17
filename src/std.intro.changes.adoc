@@ -1,0 +1,3 @@
+Significant changes for this edition are as follows:
+
+* Initial release.

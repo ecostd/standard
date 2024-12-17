@@ -1,0 +1,19 @@
+#|
+Copyright René Ferdinand Rivera Morell
+|#
+
+require-b2 5.3 ;
+
+import toolset ;
+import feature ;
+using asciidoctor ;
+
+# Build HTML from Asciidoctor..
+
+html std.html : std.adoc
+	:	<doc-stage>draft:<asciidoctor-attribute>docstage=draft
+		<doc-stage>final:<asciidoctor-attribute>docstage=final
+		<relevant>doc-stage
+		<dependency>std-docinfo.html
+	;
+explicit std.html ;

@@ -1,0 +1,10 @@
+[horizontal]
+Date: :: {revdate}
+Published: :: {pubdate}
+Authors: :: {authors}
+
+[[covertitle]]
+[.text-center]
+[.title]#**{doctitle}**#
+
+<<<

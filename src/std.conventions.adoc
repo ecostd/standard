@@ -1,10 +1,29 @@
 [[ct,([ct])]]
 = Conventions and Terminology [.right]#<<ct,[ct]>>#
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
-"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
-interpreted as described in <<RFC2119>>.
+The typographical conventions are used in this standard. The conventions listed
+here are to facilitate reading. Inconsistencies in use are unintentional and
+are not normative.
 
-The terms "JSON", "JSON text", "JSON value", "member", "element", "object",
-"array", "number", "string", "boolean", "true", "false", and "null" in this
-document are to be interpreted as defined in <<JSON>>.
+[%header,cols="2,1"]
+|===
+
+| Reference
+| Example(s)
+
+| Externally defined term.
+| _MUST_, _true_
+
+|===
+
+Footnotes and notes within the normative text are for information only.
+
+The key words "_MUST_", "_MUST NOT_", "_REQUIRED_", "_SHALL_", "_SHALL NOT_",
+"_SHOULD_", "_SHOULD NOT_", "_RECOMMENDED_", "_NOT RECOMMENDED_", "_MAY_", and
+"_OPTIONAL_" in this document are to be interpreted as described in <<BCP14>>
+<<RFC2119>> <<RFC8174>> when, and only when, they appear in all capitals, as
+shown here.
+
+The terms "_JSON_", "_JSON text_", "_JSON value_", "_member_", "_element_",
+"_object_", "_array_", "_number_", "_string_", "_boolean_", "_true_", "_false_",
+and "_null_" in this document are to be interpreted as defined in <<JSON>>.

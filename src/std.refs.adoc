@@ -10,17 +10,38 @@ all of their content constitutes requirements of this document. For dated
 references, only the edition cited applies. For undated references, the latest
 edition of the referenced document (including any amendments) applies.
 
-[[JSON,The JSON data interchange syntax]]JSON::
-	ISO/IEC 21778:2017, _Information technology --- The JSON data interchange syntax_
-[[RFC2119]]RFC2119::
-	Bradner, S., "Key words for use in RFCs to Indicate Requirement Levels",
-	BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997,
-	<https://www.rfc-editor.org/info/rfc2119>.
+[[BCP14,BCP 14]]IETF BCP14::
+Best Current Practice 14,
+<https://www.rfc-editor.org/info/bcp14>.
+At the time of writing, this BCP comprises the following: +
++
+Bradner, S., "Key words for use in RFCs to Indicate
+Requirement Levels", BCP 14, RFC 2119,
+DOI 10.17487/RFC2119, March 1997,
+<https://www.rfc-editor.org/info/rfc2119>. +
++
+Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+May 2017, <https://www.rfc-editor.org/info/rfc8174>.
+
+[[RFC2119, [RFC2119] ]]IETF RFC2119::
+Bradner, S., "Key words for use in RFCs to Indicate Requirement Levels",
+BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997,
+<https://www.rfc-editor.org/info/rfc2119>.
+
+[[RFC8174, [RFC8174] ]]IETF RFC8174::
+Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words",
+BCP 14, RFC 8174, DOI 10.17487/RFC8174, May 2017,
+<https://www.rfc-editor.org/info/rfc8174>.
+
+[[JSON, [RFC8259] ]]IETF RFC8259::
+Bray, T., Ed., "The JavaScript Object Notation (JSON) Data Interchange Format",
+STD 90, RFC 8259, DOI 10.17487/RFC8259, December 2017,
+<https://www.rfc-editor.org/info/rfc8259>.
+
 [[SemVer]]SemVer::
-	The SemVer Team. _Semantic Versioning 2.0.0_. June 18 2013.
-	<https://semver.org/spec/v2.0.0.html>
-[[Vocabulary]]Vocabulary::
-	ISO/IEC 2382, _Information technology --- Vocabulary_
+The SemVer Team. _Semantic Versioning 2.0.0_. June 18 2013.
+<https://semver.org/spec/v2.0.0.html>
 
 [[refs.info,([refs.info])]]
 == Informative References [.right]#<<refs.info,[refs.info]>>#

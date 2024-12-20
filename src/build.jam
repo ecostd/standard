@@ -10,10 +10,17 @@ using asciidoctor ;
 
 # Build HTML from Asciidoctor..
 
+local draft-version = [ SHELL "date -u +%g.%j-%-H.%-M.%-S" : strip-eol ] ;
+draft-version = 0.$(draft-version) ;
+
+local final-version = 1.0.0 ;
+
 html std.html : std.adoc
-	:	<doc-stage>draft:<asciidoctor-attribute>docstage=draft
-		<doc-stage>final:<asciidoctor-attribute>docstage=final
+	:	<dependency>std-docinfo.html
 		<relevant>doc-stage
-		<dependency>std-docinfo.html
+		<doc-stage>draft:<asciidoctor-attribute>docstage=draft
+		<doc-stage>final:<asciidoctor-attribute>docstage=final
+		<doc-stage>draft:<asciidoctor-attribute>revnumber=$(draft-version)
+		<doc-stage>final:<asciidoctor-attribute>revnumber=$(final-version)
 	;
 explicit std.html ;

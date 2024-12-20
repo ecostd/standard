@@ -1,4 +1,5 @@
 [horizontal]
+Version: :: {revnumber}
 Date: :: {revdate}
 Published: :: {pubdate}
 Authors: :: {authors}

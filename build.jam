@@ -17,8 +17,7 @@ project /ecostd/standard
 
 install std-pub
 	:	src//std.html
-	:	<name>index.html
-		<doc-stage>draft:<location>.build/pub/draft
-		<doc-stage>final:<location>.build/pub/final
-		<relevant>doc-stage
+	:	<relevant>doc-stage
+		<location>.build/pub
+		<doc-stage>draft:<name>draft.html
 	;

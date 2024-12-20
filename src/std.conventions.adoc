@@ -11,7 +11,7 @@ are not normative.
 | Reference
 | Example(s)
 
-| Externally defined term.
+| Normative term defined outside of this standard as indicated in <<refs.norm>>.
 | _MUST_, _true_
 
 |===

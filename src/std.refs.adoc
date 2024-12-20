@@ -24,6 +24,16 @@ Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
 2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
 May 2017, <https://www.rfc-editor.org/info/rfc8174>.
 
+[[BCP166,BCP 166]]IETF BCP166::
+Best Current Practice 166,
+<https://www.rfc-editor.org/info/bcp166>.
+At the time of writing, this BCP comprises the following: +
++
+Hoffman, P. and J. Klensin, "Terminology Used in
+Internationalization in the IETF", BCP 166, RFC 6365,
+DOI 10.17487/RFC6365, September 2011,
+<https://www.rfc-editor.org/info/rfc6365>.
+
 [[RFC2119, [RFC2119] ]]IETF RFC2119::
 Bradner, S., "Key words for use in RFCs to Indicate Requirement Levels",
 BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997,

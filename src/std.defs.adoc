@@ -1,0 +1,18 @@
+[[intro.defs,([intro.defs])]]
+= Terms and definitions [.right]#<<intro.defs,[intro.defs]>>#
+
+(((definitions)))
+For the purposes of this document,
+the terms and definitions given in <<BCP166>>,
+and the following apply.
+
+Terms that are used only in a small portion of this document are defined where
+they are used and _italicized_ where they are defined.
+
+////
+(((application)))
+
+[[defns.application,([defns.application])]]
+application::
+a computer program that performs some desired function.
+////

@@ -1,0 +1,4 @@
+= EcoStd Code of Conduct
+
+This repository and included communications therein follow the code of conduct
+policies described at https://ecostd.github.io/code-of-conduct.html.

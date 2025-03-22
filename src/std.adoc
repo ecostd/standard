@@ -41,13 +41,17 @@ toc::[]
 include::std.license.adoc[leveloffset=+1]
 
 //-------------------------------------------------------------------
-// Chapters..
+// Intro Chapters..
 :sectnums:
 
 include::std.intro.adoc[leveloffset=+1]
 include::std.conventions.adoc[leveloffset=+1]
 include::std.refs.adoc[leveloffset=+1]
 include::std.defs.adoc[leveloffset=+1]
+
+//-------------------------------------------------------------------
+// Body Chapters..
+:sectnums:
 
 //-------------------------------------------------------------------
 // Appendices..

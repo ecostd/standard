@@ -16,7 +16,7 @@ jobs:
       - name: Update APT Cache
         run: sudo apt-get update
       - name: Install (APT)
-        run: sudo apt-get install asciidoctor python-jsonschema
+        run: sudo apt-get install asciidoctor python3-jsonschema
       - name: Install (B2)
         run: |
           set -e

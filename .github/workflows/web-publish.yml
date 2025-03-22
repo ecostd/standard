@@ -53,7 +53,7 @@ jobs:
       - name: Build (Web)
         run: |
           echo "using asciidoctor ;" > project-config.jam
-          b2 --debug-configuration -d+2
+          b2 --debug-configuration -d+2 pub
       - name: Setup Pages
         uses: actions/configure-pages@main
       - name: Upload artifact

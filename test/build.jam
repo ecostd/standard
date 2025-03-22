@@ -4,9 +4,16 @@ Copyright René Ferdinand Rivera Morell
 
 require-b2 5.3 ;
 
-actions json-validate
+path-constant JSCHEMA_CHECK_PY : jschema_check.py ;
+
+actions json-valid
 {
-	check-jsonschema -v --traceback-mode=full --schemafile "$(>[2])" "$(>[1])" && echo "passed" > "$(<)"
+	python "$(JSCHEMA_CHECK_PY)" --schema "$(>[2])" --input "$(>[1])" > "$(<)"
+}
+
+actions json-invalid
+{
+	python "$(JSCHEMA_CHECK_PY)" --schema "$(>[2])" --input "$(>[1])" --negate > "$(<)"
 }
 
 path-constant SCHEMA_DIR : ../src ;
@@ -19,13 +26,14 @@ for local json in $(validate-success)
 {
 	local schema = $(SCHEMA_DIR)/$(json:D).json ;
 	local check = $(json:B:S=.check) ;
-	validations += [ make $(check) : $(json) $(schema) : @json-validate ] ;
+	validations += [ make $(check) : $(json) $(schema) : @json-valid ] ;
 	explicit $(check) ;
 }
 for local json in $(validate-fail)
 {
 	local schema = $(SCHEMA_DIR)/$(json:D).json ;
 	local check = $(json:B:S=.check) ;
-	ECHO >>> validate-fail ==> $(schema) ?? $(json) ;
+	validations += [ make $(check) : $(json) $(schema) : @json-invalid ] ;
+	explicit $(check) ;
 }
 alias validate : $(validations) ;

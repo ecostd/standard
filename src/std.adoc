@@ -51,6 +51,7 @@ include::std.defs.adoc[leveloffset=+1]
 
 //-------------------------------------------------------------------
 // Body Chapters..
+:sectnums:
 include::std.introspection.adoc[leveloffset=+1]
 
 //-------------------------------------------------------------------

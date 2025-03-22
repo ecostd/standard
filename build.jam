@@ -21,13 +21,14 @@ install std-pub
 		<location>.build/pub
 		<doc-stage>draft:<name>draft.html
 	;
+explicit std-pub ;
 
 install std-json
 	:	[ glob src/std_*.json ]
 	:	<location>.build/pub
 	;
+explicit std-json ;
 
-alias all
-	:	std-pub std-json
-		test//validate
-	;
+explicit [ alias pub : std-pub std-json ] ;
+explicit [ alias validate : test//validate ] ;
+explicit [ alias all : pub validate ] ;

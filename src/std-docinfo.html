@@ -22,4 +22,98 @@
 #covertitle .title {
 	font-size: 1.2em;
 }
+
+/* Table of Contents. */
+
+#toc ul.sectlevel1 > li {
+	margin-bottom: 1em;
+}
+#toc ul.sectlevel1 > li > a {
+	font-weight: bold;
+}
+
+/* Admonitions, i.e. notes. */
+
+.admonitionblock > table {
+	width: auto;
+}
+.admonitionblock .icon {
+	vertical-align: top;
+	padding: 0 0.25em 0 0 !important;
+	width: fit-content !important;
+}
+.admonitionblock .icon .title {
+	text-transform: none !important;
+	width: fit-content !important;
+	font-weight: normal !important;
+	font-style: italic !important;
+	font-family: serif !important;
+	font-size: inherit !important;
+}
+.admonitionblock .content {
+	border: none !important;
+	padding: 0 !important;
+}
+
+/* General formatting. */
+
+.indented {
+	margin-left: 3em;
+}
+
+.term {
+	font-style: italic;
+	font-family: sans-serif;
+}
+
+.ucode::before {
+	content: "U+";
+}
+.ucode, .uname {
+	font-family: serif;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+/* BNF grammar descriptions. */
+
+.bnf {
+	margin-left: 3em;
+}
+.bnf dl dt {
+	font-weight: normal;
+	font-style: italic;
+	font-family: sans-serif;
+}
+.bnf dl dd {
+	margin-left: 3em;
+	font-weight: normal;
+	font-style: italic;
+	font-family: sans-serif;
+}
+.bnf .opt::after {
+	content: "opt";
+	position: relative;
+	top: 0.25em;
+	font-size: 60%;
+}
+.bnf .descr {
+	font-style: normal;
+	font-family: serif;
+}
+
+/* Examples. */
+
+.exampleblock > .content::before {
+	content: "Example: ";
+	font-weight: normal !important;
+	font-style: italic !important;
+	font-family: serif !important;
+}
+.exampleblock > .content {
+	background: none;
+	border: none;
+	padding: 0;
+	box-shadow: none;
+}
 </style>

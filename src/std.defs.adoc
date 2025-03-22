@@ -9,10 +9,31 @@ and the following apply.
 Terms that are used only in a small portion of this document are defined where
 they are used and _italicized_ where they are defined.
 
+*application*: A computer program that performs some desired function.
+
+*capability*: An aspect of an overall specification that defines a subset of the
+entire specification.
+
+*directory*: A file that contains directory entries.
+
+*file*: An object that can be written to, or read from, or both.
+
+*filename*: A sequence of bytes used to name a file.
+
+*parent directory*: A directory containing a directory entry for the file under
+discussion.
+
+*pathname*: A string that is used to identify a file.
+
+*implementation define*: ???
+
+
 ////
+
 (((application)))
 
 [[defns.application,([defns.application])]]
 application::
 a computer program that performs some desired function.
+
 ////

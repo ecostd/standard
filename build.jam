@@ -21,3 +21,13 @@ install std-pub
 		<location>.build/pub
 		<doc-stage>draft:<name>draft.html
 	;
+
+install std-json
+	:	[ glob src/std_*.json ]
+	:	<location>.build/pub
+	;
+
+alias all
+	:	std-pub std-json
+		test//validate
+	;

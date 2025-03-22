@@ -1,0 +1,5 @@
+{
+  "$schema": "std_info-1.0.0.json",
+  "std_info": "[1.0.0,2.0.0)",
+  "gcc_extra": "1.5.0"
+}

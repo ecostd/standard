@@ -1,0 +1,31 @@
+#|
+Copyright René Ferdinand Rivera Morell
+|#
+
+require-b2 5.3 ;
+
+actions json-validate
+{
+	check-jsonschema -v --traceback-mode=full --schemafile "$(>[2])" "$(>[1])" && echo "passed" > "$(<)"
+}
+
+path-constant SCHEMA_DIR : ../src ;
+
+local validate-success = [ glob std_*/*-valid.json ] ;
+local validate-fail = [ glob std_*/*-valid-fail.json ] ;
+
+local validations ;
+for local json in $(validate-success)
+{
+	local schema = $(SCHEMA_DIR)/$(json:D).json ;
+	local check = $(json:B:S=.check) ;
+	validations += [ make $(check) : $(json) $(schema) : @json-validate ] ;
+	explicit $(check) ;
+}
+for local json in $(validate-fail)
+{
+	local schema = $(SCHEMA_DIR)/$(json:D).json ;
+	local check = $(json:B:S=.check) ;
+	ECHO >>> validate-fail ==> $(schema) ?? $(json) ;
+}
+alias validate : $(validations) ;
